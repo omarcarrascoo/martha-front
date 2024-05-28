@@ -1,0 +1,33 @@
+.MainFooter{
+    background: var(--black);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.container nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+.container nav ul li{
+    list-style: none;
+}
+
+.container nav ul li a{
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 18px;
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
+}

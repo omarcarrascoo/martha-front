@@ -1,0 +1,36 @@
+.Books{
+    background: var(--bg3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image: url(/Frame4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 100px;
+}
+.container2{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 80%;
+}
+
+.textContainer{
+    color: var(--white);
+}
+.textContainer button{
+    color: var(--white);
+    background: var(--red);
+    border-radius: 5px;
+    padding: 12px 15px;
+    border: none;
+    margin-top: 10px;
+}

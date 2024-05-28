@@ -1,0 +1,50 @@
+.JoinTheClub{
+    display: flex;
+    min-height: 100vh;
+    justify-content: flex-end;
+    background: var(--bg2);
+    align-items: center;
+}
+.container{
+    padding: 25px 0 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border: 3px solid var(--white);
+    height: fit-content;
+    border-right: 0px;
+}
+.textContainer h2{
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 400;
+}
+.textContainer p{
+    color: var(--white);
+    font-size: 20px;
+}
+.textContainer form{
+    display: flex;
+    margin-top: 20px;
+}
+.textContainer input{
+    border: none;
+    width: 100%;
+    padding: 15px 12px;
+    background: rgba( 217, 217, 217, 0.2 );
+    box-shadow: 0 8px 20px 0 rgba(124, 124, 124, 0.37);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    color: #fff;
+}
+.textContainer form button{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+}
+.imageContainer{
+    position: relative;
+    width: 40%;
+    height: 400px;
+}

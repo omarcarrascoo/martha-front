@@ -1,0 +1,32 @@
+.starBook{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Frame 4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+}
+.bookImgContainer{
+    background: rgba( 217, 217, 217, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba(124, 124, 124, 0.37);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    padding: 20px;
+}
+.bookTitle{
+    font-weight: 400;
+    
+}
+.container{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.title{
+    font-weight: 300;
+    font-size: 24px;
+}

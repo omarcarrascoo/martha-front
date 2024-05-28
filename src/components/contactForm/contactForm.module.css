@@ -1,0 +1,50 @@
+.ContactSection{
+    min-height: 100vh;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.imgContainer{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+.formTitle{
+    font-size: 64px;
+}
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+}
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+}
+.formContainer input{
+    background: none;
+    color: var(--textColor);
+    border: 1px solid var(--grey);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.formContainer label{
+    font-weight: 300;
+    margin-top: 10px;
+}
+.formContainer textarea{
+    background: none;
+    color: var(--textColor);
+    border: 1px solid var(--grey);
+    padding: 10px 10px;
+    border-radius: 10px;
+    height: 150px;
+}
+.formContainer button{
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}

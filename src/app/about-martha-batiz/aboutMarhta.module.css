@@ -1,0 +1,79 @@
+.MainHero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100dvh;
+    padding-top: 100px;
+    background-image: url(/martha2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 92%;
+    margin: 0 auto;
+}
+.section1, .section2, .section3 {
+    width: 90%;
+    color: var(--white);
+}
+.section1{
+    display: flex;
+    justify-content: flex-start;
+}
+.section1 h1{
+    font-size: 120px;
+    /* font-family: "Italiana", sans-serif; */
+    font-weight: 400;
+    font-style: normal;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+}
+.section2 h2{
+    font-size: 32px;
+    color: var(--red);
+    /* font-family: "Jost", sans-serif; */
+    font-weight: 400;
+
+}
+.section3{
+    display: flex;
+    justify-content: end;
+    background: var(--bg2);
+    padding: 20px;
+}
+.section3 p{
+    font-size: 20px;
+    font-weight: 300;
+    /* font-family: "Jost", sans-serif; */
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: #d9d9d9;
+}
+
+.section3 p{
+    width: 33.3%;
+}
+
+.aboutsection{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.aboutsection h2{
+    
+    font-size: 64px;
+    font-weight: 400;
+}
+.maquinaEscribir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
