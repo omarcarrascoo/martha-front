@@ -2,17 +2,16 @@ import React from 'react'
 import styles from './ArticleCard.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-function ArticleCard() {
+function ArticleCard({article}) {
   return (
     <div className={styles.cardContainer}>
         <div className={styles.imgContainer}>
             <Image src={"/test.png"} fill/>
         </div>
         <div className={styles.textContainer}>
-            <h3>Social and Politic Criticism </h3>
-            <p>The Reformulation of the Myth of Antigone in Franklin Domínguez’ Antígona-humor, The Reformulation of the Myth of Antigone in Franklin Domínguez’ Antígona-humor,
-                The Reformulation of the Myth of Antigone in Franklin Domínguez’ Antígona-humor,</p>
-            <Link href={"/"}>Read More</Link>
+            <h3>{article.title}</h3>
+            <p>{article.title}</p>
+            <Link href={article.link?article.link:"/"}>Read More</Link>
         </div>
     </div>
   )

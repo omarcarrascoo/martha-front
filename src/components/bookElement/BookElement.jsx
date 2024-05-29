@@ -1,22 +1,27 @@
-import React from 'react'
-import styles from './BookElement.module.css'
-import Image from 'next/image'
+'use client'
+import React from 'react';
+import styles from './BookElement.module.css';
+import Image from 'next/image';
 
-function BookElement() {
+function BookElement({ book }) {
+  if (!book) {
+    return <div>Loading...</div>;
+  }
+
   return (
-<div className={styles.container2}>
-    <div className={styles.bookImg}>
-        <Image src={"/book.png"} width={400} height={500}/>
-    </div>
-    <div className={styles.textContainer}>
-        <h2>Plaza Requiem</h2>
-        <p>2017</p>
-        <p>"Profoundly moving and beautifully written, each story unfolds as its own universe, effortlessly transporting the reader through the characters' moments of joy and pain." — Amy Stuart</p>
-        <p>The nineteen stories in No Stars in the Sky feature strong but damaged female characters in crisis. Tormented by personal conflicts and oppressive regimes that treat the female body like a trophy of war, the women in No Stars in the Sky face life-altering circumstances that either shatter or make them stronger, albeit at a very high price. True to her Latin American roots, ...</p>
+    <div className={styles.container2}>
+      <div className={styles.bookImg}>
+        <Image src={book.img} alt={book.title} width={400} height={500} />
+      </div>
+      <div className={styles.textContainer}>
+        <h2>{book.title}</h2>
+        <p>{book.year}</p>
+        <p>{book.frase}</p>
+        <p>{book.sinopsis}</p>
         <button>Get the book</button>
+      </div>
     </div>
-</div>
-  )
+  );
 }
 
-export default BookElement
+export default BookElement;
