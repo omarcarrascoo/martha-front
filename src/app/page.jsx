@@ -20,7 +20,7 @@ export default function Home() {
       <StarBook/>
       <section className={`${styles.articleSection}`}>
         <h2 className={italiana.className}>Unveil the newest literary gems</h2>
-        <ArticleLister/>
+        <ArticleLister count={12}/>
       </section>
       <JoinTheClub/>
       <AboutMarhtaSection/>

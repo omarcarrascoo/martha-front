@@ -44,9 +44,8 @@
 }
 .section3 p{
     font-size: 20px;
-    font-weight: 300;
     /* font-family: "Jost", sans-serif; */
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 1.5px;
     color: #d9d9d9;
 }

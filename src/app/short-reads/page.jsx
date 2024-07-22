@@ -22,13 +22,7 @@ function Page() {
           <div className={styles.container}>
             <h1 className={styles.heading}>Short Reads</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Neque egestas netus mi at
-              dolor. Feugiat mauris cum porttitor nam. Tortor vitae lacinia
-              morbi pharetra id non. Dui nisi condimentum vitae sit nulla
-              facilisi in sagittis eleifend. Maecenas mi venenatis nunc lorem
-              fermentum. Cursus viverra id condimentum sed in est et. Tellus
-              amet ultrices neque ac nam tincidunt. Nunc non tellus mauris
-              ultricies tellus. Volutpat tempus quis morbi pellentesque.
+              Dive into a rich collection of short reads and articles that showcase Martha's unique voice and storytelling prowess. Each piece is a window into her vibrant mind, offering readers a glimpse of her profound insights and literary artistry. Whether you're seeking thought-provoking essays or immersive narratives, Martha's work promises to enchant and inspire. Explore, reflect, and lose yourself in the literary brilliance of Martha Batiz.
             </p>
             <CategoryLister onCategorySelect={handleCategorySelect} />
             <br />

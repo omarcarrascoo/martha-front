@@ -14,7 +14,7 @@ function StarBook() {
       .then(data => {
         // Check if data is an array and has at least one item
         if (Array.isArray(data) && data.length > 0) {
-          setBook(data[0]);
+          setBook(data[1]);
         }
       })
       .catch(error => console.error('Error fetching data:', error));
@@ -29,7 +29,7 @@ function StarBook() {
     <div className={styles.starBook}>
       <div className={styles.container}>
         <div className={styles.bookImgContainer}>
-          <Image src={book.img || '/book.png'} alt={book.title} width={300} height={450} />
+          <Image src={book.img || '/coverbook.jpg'} alt={book.title} width={300} height={450} />
           <p className={styles.bookTitle}>{book.title}</p>
         </div>
         <div className={styles.textContainer}>

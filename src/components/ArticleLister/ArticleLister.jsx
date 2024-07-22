@@ -4,7 +4,7 @@ import axios from 'axios';
 import ArticleCard from '../ArticleCard/ArticleCard';
 import styles from './ArticleLister.module.css';
 
-function ArticleLister({ selectedCategory }) {
+function ArticleLister({ selectedCategory, count }) {
   const [articles, setArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
 
@@ -14,11 +14,17 @@ function ArticleLister({ selectedCategory }) {
     axios
       .get(apiUrl)
       .then((response) => {
-        setArticles(response.data);
+        if (count>0) {
+          let limitArray = response.data.slice(0,count)
+          setArticles(limitArray)
+        }else(
+          setArticles(response.data)
+        )
       })
       .catch((error) => {
         console.error('Error fetching articles:', error);
       });
+
   }, []);
 
   useEffect(() => {

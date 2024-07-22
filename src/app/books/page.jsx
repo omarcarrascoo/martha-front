@@ -14,7 +14,7 @@ function Books() {
   useEffect(() => {
     axios.get('https://ivanatovillaart.com/api/martha/books')
       .then(response => {
-        setBooks(response.data);
+        setBooks(response.data.reverse());
       })
       .catch(error => {
         console.error('Error fetching books data:', error);
@@ -39,7 +39,7 @@ function Books() {
               <Image src={"/rowl.png"} width={30} height={50} alt="Previous" />
             </div>
             {books.length > 0 ? (
-              <BookElement book={books[currentIndex]} />
+              <BookElement number={currentIndex} book={books[currentIndex]} />
             ) : (
               <div>Loading...</div>
             )}
