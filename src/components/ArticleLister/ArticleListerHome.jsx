@@ -4,7 +4,7 @@ import axios from 'axios';
 import ArticleCard from '../ArticleCard/ArticleCard';
 import styles from './ArticleLister.module.css';
 
-function ArticleLister({ selectedCategory, count }) {
+function ArticleListerHome({ selectedCategory, count }) {
   const [articles, setArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
 
@@ -39,13 +39,11 @@ function ArticleLister({ selectedCategory, count }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.container2}>
       {filteredArticles.map((article) => (
-        <ArticleCard key={article.id} article={article} widthreduse={true}  />
+        <ArticleCard key={article.id} article={article} />
       ))}
-      </div>
     </div>
   );
 }
 
-export default ArticleLister;
+export default ArticleListerHome;

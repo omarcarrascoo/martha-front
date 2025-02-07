@@ -1,7 +1,11 @@
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: space-around; */
     flex-wrap: wrap;
     gap: 15px;
+}
+.container2{
+    width: 95%;
+    margin: 0 auto
 }

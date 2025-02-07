@@ -11,6 +11,19 @@
     padding: 12px 15px;
     border: none;
     min-width: 200px;
+    cursor: pointer;
+    border: 1px solid var(--red);
+}
+.categoryCard:hover{
+    color: var(--white);
+    background: none;
+    padding: 12px 15px;
+    border: none;
+    min-width: 200px;
+    cursor: pointer;
+    color: var(--red);
+    border: 1px solid var(--red);
+    transition: all .5s;
 }
 .categoryCard a{
     color: var(--white);
