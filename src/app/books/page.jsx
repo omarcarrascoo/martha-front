@@ -14,13 +14,17 @@ function Books() {
   useEffect(() => {
     axios.get('https://ivanatovillaart.com/api/martha/books')
       .then(response => {
-        setBooks(response.data.reverse());
+        // Sort books by the 'year' property
+        const sortedBooks = response.data.sort((a, b) => b.year - a.year);
+        setBooks(sortedBooks);
       })
       .catch(error => {
         console.error('Error fetching books data:', error);
       });
   }, []);
-
+  
+  console.log(books);
+  
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : books.length - 1));
   };

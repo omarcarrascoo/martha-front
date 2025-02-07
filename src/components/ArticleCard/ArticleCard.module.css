@@ -1,4 +1,4 @@
-.cardContainer{
+/* .cardContainer{
     width: 310px;
     padding: 20px;
     background: rgba( 217, 217, 217, 0.2 );
@@ -6,7 +6,7 @@
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
 
-}
+} */
 .imgContainer{
     position: relative;
     height: 200px;
@@ -23,3 +23,14 @@
 .textContainer a{
     color: var(--red);
  }
+ .cardContainer2{
+    width: 100%;
+    padding: 30px 0px;
+    /* background: rgba( 217, 217, 217, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba(124, 124, 124, 0.37);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px ); */
+    /* border-bottom: 1px solid #000; */
+    border-bottom: .5px solid #000;
+
+}

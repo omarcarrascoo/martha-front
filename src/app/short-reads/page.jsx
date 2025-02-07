@@ -6,6 +6,7 @@ import MainHeader from '@/components/MainHeader/MainHeader';
 import MainFooter from '@/components/MainFooter/MainFooter';
 import CategoryLister from '@/components/categoryLister/CategoryLister';
 import ArticleLister from '@/components/ArticleLister/ArticleLister';
+import ArticleListerHome from '@/components/ArticleLister/ArticleListerHome';
 
 function Page() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -27,7 +28,7 @@ function Page() {
             <CategoryLister onCategorySelect={handleCategorySelect} />
             <br />
             <br />
-            <ArticleLister selectedCategory={selectedCategory} />
+            <ArticleListerHome selectedCategory={selectedCategory} />
           </div>
         </div>
       </main>
